@@ -58,9 +58,7 @@ const Signin = () => {
                 type="email"
                 placeholder="Enter your email"
                 value={form.email}
-                onChange={(e) =>
-                  setform({ ...form, email: e.target.value })
-                }
+                onChange={(e) => setform({ ...form, email: e.target.value })}
                 required
               />
             </div>
@@ -71,9 +69,7 @@ const Signin = () => {
                 type="password"
                 placeholder="Enter your password"
                 value={form.password}
-                onChange={(e) =>
-                  setform({ ...form, password: e.target.value })
-                }
+                onChange={(e) => setform({ ...form, password: e.target.value })}
                 required
               />
             </div>
@@ -88,18 +84,42 @@ const Signin = () => {
               <h3>🎉 User Details 🎉</h3>
 
               <div className="profile-grid">
-                <p><strong>Name:</strong> {userData.name}</p>
-                <p><strong>Email:</strong> {userData.email}</p>
-                <p><strong>Age:</strong> {userData.age}</p>
-                <p><strong>Phone:</strong> {userData.phone}</p>
-                <p><strong>DOB:</strong> {userData.dob}</p>
-                <p><strong>Gender:</strong> {userData.gender}</p>
-                <p><strong>Country:</strong> {userData.country}</p>
-                <p><strong>Experience:</strong> {userData.experience} Years</p>
+                <p>
+                  <strong>Name:</strong> {userData.name}
+                </p>
+                <p>
+                  <strong>Email:</strong> {userData.email}
+                </p>
+                <p>
+                  <strong>Age:</strong> {userData.age}
+                </p>
+                <p>
+                  <strong>Phone:</strong> {userData.phone}
+                </p>
+                <p>
+                  <strong>DOB:</strong> {userData.dob}
+                </p>
+                <p>
+                  <strong>Gender:</strong> {userData.gender}
+                </p>
+                <p>
+                  <strong>Country:</strong> {userData.country}
+                </p>
+                <p>
+                  <strong>state:</strong> {userData.state}
+                </p>
+                <p>
+                  <strong>city:</strong> {userData.city}
+                </p>
+                <p>
+                  <strong>Experience:</strong> {userData.experience} Years
+                </p>
               </div>
 
               <div className="profile-address">
-                <p><strong>Address:</strong> {userData.address}</p>
+                <p>
+                  <strong>Address:</strong> {userData.address}
+                </p>
               </div>
 
               <button

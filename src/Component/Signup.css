@@ -7,6 +7,7 @@
   height: 100%;
   z-index: -1;
   overflow: hidden;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
 .video-background video {
@@ -110,7 +111,12 @@ select {
   border-radius: 8px;
   border: none;
   outline: none;
-  background: rgba(255, 255, 255, 0.4); /* slightly lighter glass for visibility */
+  background: rgba(
+    255,
+    255,
+    255,
+    0.4
+  ); /* slightly lighter glass for visibility */
   color: #000000; /* black text */
 }
 
@@ -127,8 +133,8 @@ select:-ms-input-placeholder,
 input::-moz-placeholder,
 textarea::-moz-placeholder,
 select::-moz-placeholder {
-    color: #000000 !important; /* black placeholder */
-    opacity: 1 !important;      /* fully visible */
+  color: #000000 !important; /* black placeholder */
+  opacity: 1 !important; /* fully visible */
 }
 
 /* RADIO */
